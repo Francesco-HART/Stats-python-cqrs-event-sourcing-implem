@@ -1,0 +1,14 @@
+/venv/
+/main/.idea/
+/.idea/m2-python-microservices-toitoinelebg.iml
+/.idea/misc.xml
+/search/.idea/misc.xml
+/.idea/modules.xml
+/search/.idea/modules.xml
+/.idea/inspectionProfiles/profiles_settings.xml
+/search/.idea/inspectionProfiles/profiles_settings.xml
+/search/.idea/search.iml
+/.idea/vcs.xml
+/search/.idea/vcs.xml
+.idea
+.DS_Store

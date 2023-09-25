@@ -1,0 +1,27 @@
+services:
+  redis:
+    image: redis:6.2.6
+    ports:
+      - "6379:6379"
+
+  db:
+    image: postgres:latest
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      POSTGRES_DB: "mydb"
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "postgres"
+    ports:
+      - '5432:5432'
+
+  mqtt:
+    image: eclipse-mosquitto:2.0
+    ports:
+      - "1883:1883"
+    volumes:
+      - ./config/mosquitto:/mosquitto/config
+
+
+volumes:
+  postgres_data:

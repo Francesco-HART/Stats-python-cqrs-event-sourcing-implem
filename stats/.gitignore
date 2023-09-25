@@ -1,0 +1,7 @@
+/venv/
+/uploads/
+.venv
+.pytest_cache/*
+
+.pytest_cache
+__pycache__
